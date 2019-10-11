@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{B68E58D5-ADE2-476A-AD1D-DEE251AB33FE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WeatherRepair</RootNamespace>
+    <AssemblyName>WeatherRepair</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <NoWin32Manifest>true</NoWin32Manifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CSkin">
+      <HintPath>C:\Users\20480\Downloads\CSkin 16.1.14.3\CSkin 4.0\CSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Add.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add.Designer.cs">
+      <DependentUpon>Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdjustColumn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdjustColumn.Designer.cs">
+      <DependentUpon>AdjustColumn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ColumnWidth.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ColumnWidth.Designer.cs">
+      <DependentUpon>ColumnWidth.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete.Designer.cs">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delete2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Delete2.Designer.cs">
+      <DependentUpon>Delete2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deletecolunms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deletecolunms.Designer.cs">
+      <DependentUpon>Deletecolunms.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteFormula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteFormula.Designer.cs">
+      <DependentUpon>DeleteFormula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Deleterows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Deleterows.Designer.cs">
+      <DependentUpon>Deleterows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DleteFormulas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DleteFormulas.Designer.cs">
+      <DependentUpon>DleteFormulas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExcelProcess.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formula.Designer.cs">
+      <DependentUpon>Formula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="INPUT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="INPUT.Designer.cs">
+      <DependentUpon>INPUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Move.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Move.Designer.cs">
+      <DependentUpon>Move.cs</DependentUpon>
+    </Compile>
+    <Compile Include="NumberType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="NumberType.Designer.cs">
+      <DependentUpon>NumberType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OUTPUT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OUTPUT.Designer.cs">
+      <DependentUpon>OUTPUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="ProgressBar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProgressBar.Designer.cs">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SaveAs.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SaveAs.Designer.cs">
+      <DependentUpon>SaveAs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SingleRow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SingleRow.Designer.cs">
+      <DependentUpon>SingleRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SuccessionRow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SuccessionRow.Designer.cs">
+      <DependentUpon>SuccessionRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WeatherTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WeatherTool.Designer.cs">
+      <DependentUpon>WeatherTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ZRsunglight.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ZRsunglight.Designer.cs">
+      <DependentUpon>ZRsunglight.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Add.resx">
+      <DependentUpon>Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdjustColumn.resx">
+      <DependentUpon>AdjustColumn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ColumnWidth.resx">
+      <DependentUpon>ColumnWidth.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete.resx">
+      <DependentUpon>Delete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Delete2.resx">
+      <DependentUpon>Delete2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deletecolunms.resx">
+      <DependentUpon>Deletecolunms.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteFormula.resx">
+      <DependentUpon>DeleteFormula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Deleterows.resx">
+      <DependentUpon>Deleterows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DleteFormulas.resx">
+      <DependentUpon>DleteFormulas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formula.resx">
+      <DependentUpon>Formula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="INPUT.resx">
+      <DependentUpon>INPUT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Move.resx">
+      <DependentUpon>Move.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="NumberType.resx">
+      <DependentUpon>NumberType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OUTPUT.resx">
+      <DependentUpon>OUTPUT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProgressBar.resx">
+      <DependentUpon>ProgressBar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SaveAs.resx">
+      <DependentUpon>SaveAs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SingleRow.resx">
+      <DependentUpon>SingleRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SuccessionRow.resx">
+      <DependentUpon>SuccessionRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WeatherTool.resx">
+      <DependentUpon>WeatherTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ZRsunglight.resx">
+      <DependentUpon>ZRsunglight.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\图层 4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6c9e0b063706481a03bb85903a67d3bc49478f0f579ab-QGszMW_fw658.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\34D4{E]61D2%29WW%28CY4%405FGT.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\16sucai_201502050905 %286%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\123.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\图层 5.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

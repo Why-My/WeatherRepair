@@ -1,0 +1,5 @@
+首先wxpmpun.dat的默认打开方式是记事本，要运行dly文件要放在当前文件夹中方便读取
+复制dly文件名包括后缀ctrl A+ctrl C
+进去wxpmpun,dat，用ctrl V复制粘贴文件名，两次回车，空两行
+ctrl S 保存，Alt+ F4退出
+再点击Wxpm3020.exe 运行后生成INP和OUT

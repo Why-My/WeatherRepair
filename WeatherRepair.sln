@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.539
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WeatherRepair", "WeatherRepair\WeatherRepair.csproj", "{B68E58D5-ADE2-476A-AD1D-DEE251AB33FE}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "气象数据修复处理系统", "气象数据修复处理系统\气象数据修复处理系统.vdproj", "{46C42D80-836B-4ABD-871A-4A75FACBECDC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B68E58D5-ADE2-476A-AD1D-DEE251AB33FE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B68E58D5-ADE2-476A-AD1D-DEE251AB33FE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B68E58D5-ADE2-476A-AD1D-DEE251AB33FE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B68E58D5-ADE2-476A-AD1D-DEE251AB33FE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46C42D80-836B-4ABD-871A-4A75FACBECDC}.Debug|Any CPU.ActiveCfg = Debug
+		{46C42D80-836B-4ABD-871A-4A75FACBECDC}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4498A0E2-2903-4BEA-9E21-6FE87238F6AA}
+	EndGlobalSection
+EndGlobal
